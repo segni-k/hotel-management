@@ -1,2 +1,2 @@
 # hotel-management
-full-stack hottel management project
+full-stack hotel management project
