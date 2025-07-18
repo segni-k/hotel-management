@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function LocationMap() {
   return (
-    <section className="w-full px-6 py-16 bg-gray-100">
+    <section className="w-full px-6 py-16 dark:text-white">
       <motion.div
         className="max-w-6xl mx-auto text-center"
         initial={{ opacity: 0, y: 30 }}
@@ -13,7 +13,7 @@ export default function LocationMap() {
         viewport={{ once: true }}
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-6">Find Us in Addis Ababa</h2>
-        <p className="text-gray-700 mb-10 text-lg">
+        <p className="text-gray-700 mb-10 text-lg dark:text-gray-400">
           Conveniently located in the heart of the city — easy to reach from the airport and major attractions.
         </p>
         <div className="w-full h-80 md:h-[500px] rounded-xl overflow-hidden shadow-lg">

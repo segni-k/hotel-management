@@ -36,7 +36,7 @@ export default function RootLayout({
       <body
         className={poppins.className}>
         <ThemeProvider>
-          <main className="font-normal">
+          <main className="font-normal md:px-15 min-h-screen bg-white dark:bg-gray-950 text-gray-800">
             <Header />
             {children}
             <Footer />

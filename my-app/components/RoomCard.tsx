@@ -12,8 +12,8 @@ type RoomCardProps = {
         alt={name}
         className="w-full h-48 object-cover rounded-md mb-4"
       />
-      <h3 className="text-xl font-semibold mb-2">{name}</h3>
-      <p className="text-gray-600 mb-4">{description}</p>
+      <h3 className="text-xl font-semibold mb-2 dark:text-white">{name}</h3>
+      <p className="text-gray-600 mb-4 dark:text-gray-400">{description}</p>
       <p className="font-semibold text-blue-600">{price}</p>
     </div>
   );

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function AboutSection() {
   return (
-    <section className="py-20 px-6 max-w-7xl mx-auto">
+    <section className="py-20 px-6 max-w-7xl mx-auto dark:text-white">
       {/* About Hotel */}
       <motion.div
         className="mb-16 flex flex-col md:flex-row gap-10 items-center"
@@ -20,7 +20,7 @@ export default function AboutSection() {
         />
         <div className="text-left">
           <h2 className="text-3xl font-bold mb-4">About EliteStay Hotel</h2>
-          <p className="text-gray-700 text-lg">
+          <p className="text-gray-700 text-lg dark:text-gray-400">
             Nestled in the heart of Addis Ababa, EliteStay is a 5-star hotel
             that blends modern comfort with Ethiopian heritage. With luxurious
             rooms, exceptional service, and world-class amenities, our goal is
@@ -44,7 +44,7 @@ export default function AboutSection() {
         />
         <div className="text-left">
           <h2 className="text-3xl font-bold mb-4">Our Cuisine</h2>
-          <p className="text-gray-700 text-lg">
+          <p className="text-gray-700 text-lg dark:text-gray-400">
             Enjoy authentic Ethiopian dishes alongside a variety of
             international options. Our culinary team uses fresh, locally
             sourced ingredients to deliver unforgettable flavors in every meal.
@@ -67,7 +67,7 @@ export default function AboutSection() {
         />
         <div className="text-left">
           <h2 className="text-3xl font-bold mb-4">Meet Our Executive Chef</h2>
-          <p className="text-gray-700 text-lg">
+          <p className="text-gray-700 text-lg dark:text-gray-400">
             Chef Dawit Mengistu brings over 20 years of experience in Ethiopian
             and international cuisine. His attention to detail and passion for
             culinary excellence sets the tone for a memorable dining experience.
