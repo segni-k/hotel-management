@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "^14.2.15",
     "firebase": "^11.6.0",
     "framer-motion": "^12.10.5",
     "next": "15.3.1",
