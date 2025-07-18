@@ -13,7 +13,7 @@ export default function SearchComponent({ query, setQuery }: SearchProps) {
         placeholder="Search for rooms, features, amenities..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm text-lg"
+        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm text-lg dark:text-gray-400"
       />
     </div>
   );

@@ -17,7 +17,7 @@ const rooms: Room[] = [
   {
     title: "Executive Room",
     description: "Ideal for business travelers with modern amenities.",
-    imageUrl: "https://source.unsplash.com/featured/?executive,room"
+    imageUrl: "https://source.unsplash.com/featured/?executive"
   },
   {
     title: "Presidential Suite",
@@ -40,9 +40,9 @@ export default function RoomTypes({ query }: RoomTypesProps) {
   if (filteredRooms.length === 0) return null;
 
   return (
-    <section className="w-full px-4 py-12 bg-gray-50">
+    <section className="w-full px-4 py-12 ">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8">Room Categories</h2>
+        <h2 className="text-3xl font-bold text-center mb-8 dark:text-white">Room Categories</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {filteredRooms.map((room, index) => (
             <motion.div

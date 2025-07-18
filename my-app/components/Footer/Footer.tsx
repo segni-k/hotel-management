@@ -5,7 +5,7 @@ import { BsFillSendFill, BsTelephoneOutbound } from "react-icons/bs"
 
 const Footer = () => {
   return (
-    <footer className="mt-16">
+    <footer className="mt-16 dark:text-white">
         <div className="container mx-auto px-4">
             <Link href="/" className="font-black text-tertiary-dark">
             Hotelzz
