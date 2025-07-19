@@ -8,7 +8,7 @@ export default function HeroSection() {
       className="w-full h-screen bg-cover bg-center flex items-center justify-center text-white text-center px-4"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1950&q=80')",
+          "url('/images/hero.jpg')",
       }}
     >
       <motion.div

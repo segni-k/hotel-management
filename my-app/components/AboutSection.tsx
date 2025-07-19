@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function AboutSection() {
   return (
@@ -13,9 +14,11 @@ export default function AboutSection() {
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
       >
-        <img
-          src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80"
+        <Image
+          src="/images/about.jpg"
           alt="Hotel lobby"
+          width={100}
+          height={100}
           className="rounded-xl w-full md:w-1/2 object-cover h-80"
         />
         <div className="text-left">
@@ -37,11 +40,16 @@ export default function AboutSection() {
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
       >
-        <img
-          src="https://images.unsplash.com/photo-1613145993481-5de3c911a361?auto=format&fit=crop&w=800&q=80"
+        <Image
+          src="/images/ethio-cuisine.jpeg"
+
           alt="Ethiopian cuisine"
           className="rounded-xl w-full md:w-1/2 object-cover h-80"
+          width={100}
+          height={100}
         />
+     
+
         <div className="text-left">
           <h2 className="text-3xl font-bold mb-4">Our Cuisine</h2>
           <p className="text-gray-700 text-lg dark:text-gray-400">
@@ -60,9 +68,11 @@ export default function AboutSection() {
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
       >
-        <img
-          src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=800&q=80"
+        <Image
+          src="/images/chef.jpg"
           alt="Hotel chef"
+          width={100}
+          height={100}
           className="rounded-xl w-full md:w-1/2 object-cover h-80"
         />
         <div className="text-left">

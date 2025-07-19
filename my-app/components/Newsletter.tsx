@@ -22,7 +22,7 @@ export default function Newsletter() {
           <input
             type="email"
             placeholder="Your email address"
-            className="w-full md:w-1/3 px-4 py-3 rounded-l-xl text-black placeholder-gray-500"
+            className="w-full md:w-1/3 px-4 py-3 rounded-l-xl text-black placeholder-gray-600 border border-gray-300 focus:outline-none "
             required
           />
           <button
