@@ -55,9 +55,9 @@ const Auth = () => {
           <input type="email" name="email" placeholder='Type your Email' required value={formData.email} className={inputStyles} onChange={handleInputChange}/>
           <input type="text" name="name"  placeholder='Type your Name' required value={formData.name} className={inputStyles} onChange={handleInputChange}/>
           <input type="password" name="password" placeholder='Type your Password' required value={formData.password} className={inputStyles} onChange={handleInputChange}/>
-          <button type='submit' className='w-full bg-orange-700 dark:text-white focus:outline-none font-medium rounded:lg text-sm px-5 py-2.5 text-center'>Sign Up</button>
+          <button type='submit' className='w-full bg-orange-600 text-white focus:outline-none font-medium rounded:lg text-sm px-5 py-2.5 text-center'>Sign Up</button>
         </form>
-        <button className="text-orange-700 underline p-5 text-md font-semibold border-1 border-indigo-600">Login</button>
+        <button className="w-full bg-orange-600 text-white focus:outline-none font-medium rounded:lg text-sm px-5 py-2.5 text-center">Login</button>
       </div>
     </section>
     <div className="bg-white dark:bg-gray-950 text-gray-500 max-w-96 mx-4 md:p-6 p-4 text-left text-sm rounded-xl shadow-[0px_0px_10px_0px] shadow-black/10">
@@ -72,7 +72,7 @@ const Auth = () => {
     </form>
     <p className="text-center mt-4 dark:text-white">Don’t have an account? <a href="#" className="text-blue-500 underline">Signup</a></p>
     <button type="button" className="w-full dark:bg-indigo-500 flex items-center gap-2 justify-center mt-5 bg-black py-2.5 rounded-full text-white">
-         <AiFillApple className="mr-3 text-4xl cursor-pointer text-black dark:text-white"/>
+         <AiFillApple className="mr-3 text-4xl cursor-pointer text-white"/>
         Log in with Apple
     </button>
     <button type="button" className="w-full flex items-center gap-2 justify-center my-3 bg-white border border-gray-500/30 py-2.5 rounded-full text-gray-800">
