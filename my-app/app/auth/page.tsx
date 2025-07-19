@@ -23,7 +23,7 @@ const Auth = () => {
   }
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault;
+    event.preventDefault();
 
     try {
       console.log(formData);
