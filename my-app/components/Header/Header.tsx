@@ -73,7 +73,7 @@ const Header = () => {
       </SignedOut>
       <SignedIn>
         {isLoaded && isSignedIn && user ? (
-          <Link href="/profile" className="flex items-center gap-2 text-lg dark:text-white">
+          <Link href="/" className="flex items-center gap-2 text-lg dark:text-white">
             <div className=" font-semibold">{user?.fullName}</div>
             <UserButton
             />
