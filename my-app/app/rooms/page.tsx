@@ -12,28 +12,28 @@ const rooms = [
       {
         name: "Standard Room 1",
         description: "Comfortable room with essential amenities.",
-        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+        image: "/images/standard-1.jpg",
         price: "$100/night",
         rating: 4.2
       },
       {
         name: "Standard Room 2",
         description: "Modern design with cozy interior.",
-        image: "https://images.unsplash.com/photo-1554995207-c18c203602cb",
+        image: "/images/standard-2.jpg",
         price: "$105/night",
         rating: 4.0
       },
       {
         name: "Standard Room 3",
         description: "Affordable luxury for solo travelers.",
-        image: "https://images.unsplash.com/photo-1615874959474-d609969a8f49",
+        image: "/images/standard-3.jpg",
         price: "$110/night",
         rating: 4.1
       },
       {
         name: "Standard Room 4",
         description: "Simple, clean, and convenient.",
-        image: "https://images.unsplash.com/photo-1582719478250-04ad087c6c38",
+        image: "/images/standard-4.jpg",
         price: "$115/night",
         rating: 4.3
       }
@@ -45,61 +45,61 @@ const rooms = [
       {
         name: "Deluxe Room 1",
         description: "Spacious and elegant with premium bedding.",
-        image: "https://images.unsplash.com/photo-1590490360181-0951eea8aa4f",
+        image: "/images/deluxe-1.jpg",
         price: "$180/night",
         rating: 4.7
       },
       {
         name: "Deluxe Room 2",
         description: "Designed for couples with balcony view.",
-        image: "https://images.unsplash.com/photo-1560067174-89480b1e5f2d",
+        image: "/images/deluxe-2.jpg",
         price: "$185/night",
         rating: 4.6
       },
       {
         name: "Deluxe Room 3",
         description: "Warm lighting and sophisticated finish.",
-        image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
+        image: "/images/deluxe-3.jpg",
         price: "$190/night",
         rating: 4.8
       },
       {
         name: "Deluxe Room 4",
         description: "Elegant decor with a cozy feel.",
-        image: "https://images.unsplash.com/photo-1578898880053-4c3e3c2217f2",
+        image: "/images/deluxe-4.jpg",
         price: "$195/night",
         rating: 4.9
       }
     ]
   },
   {
-    category: "Executive Suite",
+    category: "Presidential Suite",
     rooms: [
       {
-        name: "Executive Suite 1",
+        name: "Presidential Suite 1",
         description: "Ultimate luxury with personalized service.",
-        image: "https://images.unsplash.com/photo-1618773928121-c32242ecdb85",
+        image: "/images/presidential-1.jpg",
         price: "$250/night",
         rating: 4.9
       },
       {
-        name: "Executive Suite 2",
+        name: "Presidential Suite 2",
         description: "Spacious layout with stunning city views.",
-        image: "https://images.unsplash.com/photo-1600585153837-6c75f337d24a",
+        image: "/images/presidential-2.jpg",
         price: "$255/night",
         rating: 4.9
       },
       {
-        name: "Executive Suite 3",
+        name: "Presidential Suite 3",
         description: "Luxury retreat with all premium amenities.",
-        image: "https://images.unsplash.com/photo-1576675784094-c20a9d27e8f9",
+        image: "/images/presidential-3.jpg",
         price: "$260/night",
         rating: 5.0
       },
       {
-        name: "Executive Suite 4",
+        name: "Presidential Suite 4",
         description: "A touch of class and comfort combined.",
-        image: "https://images.unsplash.com/photo-1549924231-f129b911e442",
+        image: "/images/presidential-4.jpg",
         price: "$265/night",
         rating: 4.8
       }
