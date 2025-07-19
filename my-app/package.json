@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.25.4",
     "firebase": "^11.6.0",
     "framer-motion": "^12.10.5",
     "next": "15.3.1",
