@@ -36,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY ?? ''}>
+      <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
         <body className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable}`}>
           <ThemeProvider>
             <main className="font-normal md:px-15 min-h-screen bg-white dark:bg-gray-950 text-gray-800">
