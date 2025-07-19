@@ -16,7 +16,7 @@ const rooms: Room[] = [
     imageUrl: "/images/deluxes.jpg"
   },
   {
-    title: "Executive Room",
+    title: "Exclusive Room",
     description: "Ideal for business travelers with modern amenities.",
     imageUrl: "/images/executive.jpg"
   },
