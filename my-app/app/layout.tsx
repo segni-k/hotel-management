@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import {
+  ClerkProvider,
+} from '@clerk/nextjs'
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
@@ -32,17 +35,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={poppins.className}>
-        <ThemeProvider>
-          <main className="font-normal md:px-15 min-h-screen bg-white dark:bg-gray-950 text-gray-800">
-            <Header />
-            {children}
-            <Footer />
-          </main>
-        </ThemeProvider>
-      </body>
+    <html lang="en" suppressHydrationWarning>
+      <ClerkProvider>
+        <body className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable}`}>
+          <ThemeProvider>
+            <main className="font-normal md:px-15 min-h-screen bg-white dark:bg-gray-950 text-gray-800">
+              <Header />
+              {children}
+              <Footer />
+            </main>
+          </ThemeProvider>
+        </body>
+      </ClerkProvider>
     </html>
   );
 }

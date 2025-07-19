@@ -1,11 +1,25 @@
 // app/reserve/page.tsx
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { useEffect } from "react";
+import { useUser, RedirectToSignIn } from "@clerk/nextjs";
+import { useRouter, useSearchParams } from "next/navigation";
 
 export default function ReservationPage() {
   const searchParams = useSearchParams();
   const room = searchParams.get("room");
+
+ const { isLoaded, isSignedIn } = useUser();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (isLoaded && !isSignedIn) {
+      RedirectToSignIn({ redirectUrl: "/sign-in?redirect_url=/register" });
+    }
+  }, [isLoaded, isSignedIn, router]);
+
+  if (!isLoaded || !isSignedIn) return null;
+
 
   return (
     <main className="flex flex-col items-center justify-center w-full py-16 px-6 dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen">
