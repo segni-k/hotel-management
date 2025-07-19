@@ -13,18 +13,18 @@ const Footer = () => {
             <h4 className="font-semibold text-[40px] py-6">Contact Us</h4>
             <div className="flex flex-wrap gap-16 items-center justify-between">
                 <div className="fex-1">
-                    <p>Ethiopia, Harer</p>
+                    <p>Addis Ababa, Ethiopia</p>
                     <div className="flex items-center py-4">
                         <BsFillSendFill />
-                        <p className="ml-2">@sg_boy</p>
+                        <p className="ml-2">@Elite_stay</p>
                     </div>
                     <div className="flex items-center">
                         <BsTelephoneOutbound />
-                        <p className="ml-2">+251938699008</p>
+                        <p className="ml-2">+251911229008</p>
                     </div>
                     <div className="flex items-center pt-4">
                         <BiMessageDetail />
-                        <p className="ml-2">@segnikasahun</p>
+                        <p className="ml-2">Elitestay@official.com</p>
                     </div>
                 </div>
                 <div className="flex-1 md:text-right">

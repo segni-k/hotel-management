@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -8,21 +9,21 @@ const testimonials = [
     feedback:
       "One of the best hotel experiences I’ve ever had! The staff were incredibly friendly and the food was just divine.",
     image:
-      "https://randomuser.me/api/portraits/women/65.jpg",
+      "/images/testimonial-1.jpg",
   },
   {
     name: "Henok G.",
     feedback:
       "Amazing rooms and facilities. The location is perfect for both tourists and business travelers.",
     image:
-      "https://randomuser.me/api/portraits/men/32.jpg",
+      "/images/testimonial-2.jpg",
   },
   {
     name: "Sara K.",
     feedback:
       "Stunning decor, world-class service, and delicious cuisine. Highly recommended!",
     image:
-      "https://randomuser.me/api/portraits/women/75.jpg",
+      "/images/testimonial-3.jpg",
   },
 ];
 
@@ -48,11 +49,14 @@ export default function Testimonials() {
             viewport={{ once: true }}
           >
             <div className="flex items-center gap-4 mb-4">
-              <img
+              <Image
                 src={t.image}
                 alt={t.name}
+                width={100}
+                height={100}
                 className="w-14 h-14 rounded-full object-cover"
               />
+
               <h4 className="font-semibold text-lg">{t.name}</h4>
             </div>
             <p className="text-gray-700 italic">“{t.feedback}”</p>

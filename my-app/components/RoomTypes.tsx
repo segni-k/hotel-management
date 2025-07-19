@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 type Room = {
   title: string;
@@ -12,17 +13,17 @@ const rooms: Room[] = [
   {
     title: "Deluxe Suite",
     description: "Spacious room with luxury furnishings and a city view.",
-    imageUrl: "https://source.unsplash.com/featured/?hotel,room"
+    imageUrl: "/images/deluxes.jpg"
   },
   {
     title: "Executive Room",
     description: "Ideal for business travelers with modern amenities.",
-    imageUrl: "https://source.unsplash.com/featured/?executive"
+    imageUrl: "/images/executive.jpg"
   },
   {
     title: "Presidential Suite",
     description: "Ultimate luxury with premium services and privacy.",
-    imageUrl: "https://source.unsplash.com/featured/?presidential,room"
+    imageUrl: "/images/presidentials.jpg"
   }
 ];
 
@@ -53,7 +54,8 @@ export default function RoomTypes({ query }: RoomTypesProps) {
               transition={{ duration: 0.5, delay: index * 0.2 }}
               className="rounded-lg overflow-hidden shadow-lg bg-white"
             >
-              <img src={room.imageUrl} alt={room.title} className="w-full h-48 object-cover" />
+              <Image src={room.imageUrl} alt={room.title} width={400} height={300} className="w-full h-48 object-cover" />
+
               <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2">{room.title}</h3>
                 <p className="text-gray-600">{room.description}</p>
